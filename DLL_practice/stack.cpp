@@ -18,7 +18,7 @@ bool Stack::pop() {
 
 const Data& Stack::top()  {
     if (!isEmpty()) {
-        return list.content(list.returnHead()->next);
+        return list.content(list.returnTail()->next);
     }
     throw std::runtime_error("Stack is empty");
 }
