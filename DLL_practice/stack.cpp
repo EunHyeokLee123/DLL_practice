@@ -24,5 +24,6 @@ const Data& Stack::top()  {
 }
 
 void Stack::display()  {
+    cout << "½ºÅÃÀÓ" << endl;
     list.display();
 }

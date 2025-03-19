@@ -24,5 +24,6 @@ const Data& Queue::front()  {
 }
 
 void Queue::display()  {
+    cout << "е╔юс" << endl;
     list.display();
 }
