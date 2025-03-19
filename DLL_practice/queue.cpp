@@ -4,6 +4,8 @@
 
 Queue::Queue() : list() {}
 
+Queue::~Queue() {}
+
 bool Queue::isEmpty() const {
     return list.isEmpty();
 }

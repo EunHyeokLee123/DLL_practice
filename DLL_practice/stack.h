@@ -6,12 +6,13 @@
 class Stack {
 public:
     Stack();
+    ~Stack();
 
     bool isEmpty() const;
     void push(const Data& in);
     bool pop();
-    const Data& top() ;
-    void display() ;
+    const Data& top();
+    void display();
 
 private:
     DoubleLinkedList list;

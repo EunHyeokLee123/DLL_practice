@@ -4,6 +4,8 @@
 
 Stack::Stack() : list() {}
 
+Stack::~Stack() {}
+
 bool Stack::isEmpty() const {
     return list.isEmpty();
 }

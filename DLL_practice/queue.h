@@ -6,6 +6,7 @@
 class Queue {
 public:
     Queue();
+    ~Queue();
 
     bool isEmpty() const;
     void enqueue(const Data& in);
