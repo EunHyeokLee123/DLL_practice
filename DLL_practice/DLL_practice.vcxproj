@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="deque.cpp" />
     <ClCompile Include="DLL_practice.cpp" />
     <ClCompile Include="linkList.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="deque.h" />
     <ClInclude Include="linklist.h" />
     <ClInclude Include="queue.h" />
