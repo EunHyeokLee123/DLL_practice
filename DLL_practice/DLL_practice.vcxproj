@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="BinaryTreeArray.cpp" />
+    <ClCompile Include="CompleteBST.cpp" />
     <ClCompile Include="deque.cpp" />
     <ClCompile Include="DLL_practice.cpp" />
     <ClCompile Include="linkList.cpp" />
@@ -138,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="BinaryTreeArray.h" />
+    <ClInclude Include="CompleteBST.h" />
     <ClInclude Include="deque.h" />
     <ClInclude Include="linklist.h" />
     <ClInclude Include="queue.h" />

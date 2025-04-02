@@ -17,7 +17,7 @@ public:
     void insert(int value);
     void remove(int value);
     int search(int value);
-    void print();
+    //void print();
     int size();
 };
 

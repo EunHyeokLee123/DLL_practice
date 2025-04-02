@@ -15,6 +15,7 @@ void BinaryTreeArray::insert(int value) {
     while (i < 300) {
         if (tree[i] == -1) {
             tree[i] = value;
+            capacity++;
             return;
         }
         else if (value < tree[i]) {
@@ -24,7 +25,6 @@ void BinaryTreeArray::insert(int value) {
             i = i * 2 + 2;
         }
     }
-    capacity++;
 }
 
 void BinaryTreeArray::remove(int value) {
@@ -59,6 +59,7 @@ void BinaryTreeArray::remove(int value) {
                 }
                 tree[i] = tree[mid];
                 tree[mid] = -1;
+                capacity--;
                 return;
             }
         }
@@ -87,6 +88,8 @@ int BinaryTreeArray::search(int value) {
     return -1;
 }
 
+
 int BinaryTreeArray::size() {
     return capacity;
 }
+

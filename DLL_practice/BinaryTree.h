@@ -24,14 +24,12 @@ private:
     Node* search(Node* node, int value);
     Node* remove(Node* node, int value);
     Node* findMin(Node* node);
-    void inorder(Node* node);
-    void preorder(Node* node);
-    void postorder(Node* node);
     void clear(Node* node);
-    void swap(Node* n1, Node* n2);
-    void sizeup();
-    void sizedown();
+   // void swap(Node* n1, Node* n2);
+    //void sizeup();
+   // void sizedown();
     bool isEmpty();
+    void printSorted(Node* node);
 
 public:
     BinaryTree();
@@ -40,15 +38,16 @@ public:
     void insert(int value);
     bool search(int value);
     void remove(int value);
-    int size();
+  //  int size();
     bool isLeaf(Node* node);
     Node* searchNode(int value);
 
-    void inorder();    // 중위 순회
-    void preorder();   // 전위 순회
-    void postorder();  // 후위 순회
+  //  void inorder();    // 중위 순회
+   // void preorder();   // 전위 순회
+   // void postorder();  // 후위 순회
 
     void clear();      // 트리 전체 삭제
+    void printSorted();
 };
 
 

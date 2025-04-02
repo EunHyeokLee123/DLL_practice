@@ -29,6 +29,13 @@ Node* BinaryTree::insert(Node* node, int value) {
     }
 }
 
+bool BinaryTree::isEmpty() {
+    if (root->left == nullptr && root->right == nullptr) {
+        return true;
+    }
+    return false;
+}
+
 // contains 함수
 bool BinaryTree::search(int value) {
     return search(root, value) != nullptr;
@@ -108,31 +115,6 @@ Node* BinaryTree::findMin(Node* node) {
     }
 }
 
-// 순회 메소드들
-void BinaryTree::inorder() {
-    inorder(root);
-}
-
-void BinaryTree::inorder(Node* node) {
-    // 구현 생략
-}
-
-void BinaryTree::preorder() {
-    preorder(root);
-}
-
-void BinaryTree::preorder(Node* node) {
-    // 구현 생략
-}
-
-void BinaryTree::postorder() {
-    postorder(root);
-}
-
-void BinaryTree::postorder(Node* node) {
-    // 구현 생략
-}
-
 // clear 메소드
 void BinaryTree::clear() {
     clear(root);
@@ -152,4 +134,18 @@ bool BinaryTree::isLeaf(Node* node) {
         return true;
     }
     return false;
+}
+
+// 크기순(오름차순) 출력 함수 추가
+void BinaryTree::printSorted() {
+    printSorted(root);
+    std::cout << std::endl;
+}
+
+void BinaryTree::printSorted(Node* node) {
+    if (node == nullptr) return;
+
+    printSorted(node->left);  // 왼쪽 서브트리 방문
+    cout << node->data << " ";  // 현재 노드 출력
+    printSorted(node->right); // 오른쪽 서브트리 방문
 }
